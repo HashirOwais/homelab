@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="950" viewBox="0 0 1420 950" font-family="JetBrains Mono, ui-monospace, monospace" role="img" aria-label="Applications">
+<defs>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="1"/></pattern>
+<marker id="am-frontend" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#22d3ee"/></marker>
+<marker id="am-backend" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#34d399"/></marker>
+<marker id="am-db" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#a78bfa"/></marker>
+<marker id="am-storage" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#fbbf24"/></marker>
+<marker id="am-security" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#fb7185"/></marker>
+<marker id="am-external" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/></marker>
+</defs>
+<rect width="1420" height="950" fill="#020617"/>
+<rect width="1420" height="950" fill="url(#grid)"/>
+<text x="40" y="50" fill="#e2e8f0" font-size="22" font-weight="600">Applications</text>
+<text x="40" y="75" fill="#94a3b8" font-size="12">One host, two backends, one database — how a request reaches Daymark and where the data sits</text>
+<rect x="40" y="560" width="1340" height="240" rx="10" fill="none" stroke="#34d399" stroke-width="1.2" stroke-dasharray="7 6" stroke-opacity="0.75"/>
+<text x="54" y="581" fill="#34d399" font-size="12" letter-spacing="0.6">Telemetry</text>
+<text x="54" y="597" fill="#94a3b8" font-size="10">the same request, seen from three sides</text>
+<path d="M 300 196 L 330 196" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#am-external)"/>
+<path d="M 300 318 L 330 318" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#am-external)"/>
+<path d="M 620 200 L 650 200" fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#am-frontend)"/>
+<path d="M 620 330 L 650 330" fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#am-frontend)"/>
+<path d="M 960 350 L 975 350 L 975 195 L 990 195" fill="none" stroke="#34d399" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#am-backend)"/>
+<path d="M 1185 240 L 1185 270" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#am-db)"/>
+<path d="M 1080 380 L 1080 410" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#am-db)"/>
+<path d="M 1170 452 L 1200 452" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#am-storage)"/>
+<path d="M 310 654 L 400 654" fill="none" stroke="#34d399" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#am-backend)"/>
+<path d="M 310 746 L 370 746 L 370 720 L 400 720" fill="none" stroke="#22d3ee" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#am-frontend)"/>
+<path d="M 630 695 L 710 695" fill="none" stroke="#34d399" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#am-backend)"/>
+<rect x="40" y="150" width="260" height="92" rx="6" fill="#0f172a"/><rect x="40" y="150" width="260" height="92" rx="6" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1.5"/><text x="52" y="172" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">Browser</text><text x="52" y="188" fill="#cbd5e1" font-size="10.5" text-anchor="start">daymark.lan.hashirowais.com</text><text x="52" y="204" fill="#cbd5e1" font-size="10.5" text-anchor="start">Expo web bundle</text><text x="288" y="171" fill="#94a3b8" font-size="10" text-anchor="end">LAN/VPN</text>
+<rect x="40" y="272" width="260" height="92" rx="6" fill="#0f172a"/><rect x="40" y="272" width="260" height="92" rx="6" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1.5"/><text x="52" y="294" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">Hermes agent</text><text x="52" y="310" fill="#cbd5e1" font-size="10.5" text-anchor="start">MCP client, same host</text><text x="52" y="326" fill="#cbd5e1" font-size="10.5" text-anchor="start">reads and writes tasks</text><text x="288" y="293" fill="#94a3b8" font-size="10" text-anchor="end">vm</text>
+<rect x="40" y="394" width="260" height="78" rx="6" fill="#0f172a"/><rect x="40" y="394" width="260" height="78" rx="6" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1.5"/><text x="52" y="416" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">Nothing public</text><text x="52" y="432" fill="#cbd5e1" font-size="10.5" text-anchor="start">no port forward, no public DNS</text><text x="288" y="415" fill="#fb7185" font-size="10" text-anchor="end">—</text>
+<rect x="330" y="150" width="290" height="214" rx="6" fill="#0f172a"/><rect x="330" y="150" width="290" height="214" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.5"/><text x="342" y="172" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">Traefik</text><text x="342" y="188" fill="#cbd5e1" font-size="10.5" text-anchor="start">LoadBalancer 192.168.69.202</text><text x="342" y="204" fill="#cbd5e1" font-size="10.5" text-anchor="start">one entrypoint on :443</text><text x="342" y="220" fill="#cbd5e1" font-size="10.5" text-anchor="start">wildcard *.lan.hashirowais.com</text><text x="342" y="236" fill="#cbd5e1" font-size="10.5" text-anchor="start"></text><text x="342" y="252" fill="#cbd5e1" font-size="10.5" text-anchor="start">Ingress rules for one host:</text><text x="342" y="268" fill="#cbd5e1" font-size="10.5" text-anchor="start">/api  →  daymark-api:80</text><text x="342" y="284" fill="#cbd5e1" font-size="10.5" text-anchor="start">/     →  daymark-web:80</text><text x="342" y="300" fill="#cbd5e1" font-size="10.5" text-anchor="start">same origin, so no CORS</text><text x="608" y="171" fill="#22d3ee" font-size="10" text-anchor="end">:443</text>
+<rect x="650" y="150" width="310" height="96" rx="6" fill="#0f172a"/><rect x="650" y="150" width="310" height="96" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/><text x="662" y="172" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">daymark-web</text><text x="662" y="188" fill="#cbd5e1" font-size="10.5" text-anchor="start">nginx-unprivileged :8080</text><text x="662" y="204" fill="#cbd5e1" font-size="10.5" text-anchor="start">static files, GET only</text><text x="948" y="171" fill="#34d399" font-size="10" text-anchor="end">ns daymark</text>
+<rect x="650" y="272" width="310" height="156" rx="6" fill="#0f172a"/><rect x="650" y="272" width="310" height="156" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/><text x="662" y="294" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">daymark-api</text><text x="662" y="310" fill="#cbd5e1" font-size="10.5" text-anchor="start">Go binary :8080, uid 10001</text><text x="662" y="326" fill="#cbd5e1" font-size="10.5" text-anchor="start">REST under /api</text><text x="662" y="342" fill="#cbd5e1" font-size="10.5" text-anchor="start">MCP endpoint for agents</text><text x="662" y="358" fill="#cbd5e1" font-size="10.5" text-anchor="start">/api/health for probes</text><text x="662" y="374" fill="#cbd5e1" font-size="10.5" text-anchor="start">DATABASE_URL from a Secret</text><text x="948" y="293" fill="#34d399" font-size="10" text-anchor="end">ns daymark</text>
+<rect x="990" y="150" width="390" height="90" rx="6" fill="#0f172a"/><rect x="990" y="150" width="390" height="90" rx="6" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/><text x="1002" y="172" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">pg-rw</text><text x="1002" y="188" fill="#cbd5e1" font-size="10.5" text-anchor="start">pg-rw.pg.svc.cluster.local:5432</text><text x="1002" y="204" fill="#cbd5e1" font-size="10.5" text-anchor="start">CNPG read-write service</text><text x="1368" y="171" fill="#a78bfa" font-size="10" text-anchor="end">svc</text>
+<rect x="990" y="270" width="390" height="110" rx="6" fill="#0f172a"/><rect x="990" y="270" width="390" height="110" rx="6" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/><text x="1002" y="292" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">pg — primary</text><text x="1002" y="308" fill="#cbd5e1" font-size="10.5" text-anchor="start">namespace pg, 1 instance</text><text x="1002" y="324" fill="#cbd5e1" font-size="10.5" text-anchor="start">database daymark · role daymark_app</text><text x="1002" y="340" fill="#cbd5e1" font-size="10.5" text-anchor="start">sslmode=require enforced</text><text x="1368" y="291" fill="#a78bfa" font-size="10" text-anchor="end">cnpg</text>
+<rect x="990" y="410" width="180" height="84" rx="6" fill="#0f172a"/><rect x="990" y="410" width="180" height="84" rx="6" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/><text x="1002" y="432" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">PVC 20Gi</text><text x="1002" y="448" fill="#cbd5e1" font-size="10.5" text-anchor="start">storageClass longhorn</text>
+<rect x="1200" y="410" width="180" height="84" rx="6" fill="#0f172a"/><rect x="1200" y="410" width="180" height="84" rx="6" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.5"/><text x="1212" y="432" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">Longhorn</text><text x="1212" y="448" fill="#cbd5e1" font-size="10.5" text-anchor="start">3 replicas</text><text x="1212" y="464" fill="#cbd5e1" font-size="10.5" text-anchor="start">one per node</text>
+<rect x="60" y="612" width="250" height="84" rx="6" fill="#0f172a"/><rect x="60" y="612" width="250" height="84" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/><text x="72" y="634" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">daymark api + web</text><text x="72" y="650" fill="#cbd5e1" font-size="10.5" text-anchor="start">OTLP metrics and traces</text>
+<rect x="60" y="712" width="250" height="68" rx="6" fill="#0f172a"/><rect x="60" y="712" width="250" height="68" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.5"/><text x="72" y="734" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">OPNsense + nodes</text><text x="72" y="750" fill="#cbd5e1" font-size="10.5" text-anchor="start">DHCP, DNS, Suricata, kubelet</text>
+<rect x="400" y="640" width="230" height="110" rx="6" fill="#0f172a"/><rect x="400" y="640" width="230" height="110" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/><text x="412" y="662" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">OTel collector</text><text x="412" y="678" fill="#cbd5e1" font-size="10.5" text-anchor="start">one pipeline</text><text x="412" y="694" fill="#cbd5e1" font-size="10.5" text-anchor="start">batches, then exports</text><text x="618" y="661" fill="#34d399" font-size="10" text-anchor="end">otel</text>
+<rect x="710" y="640" width="210" height="110" rx="6" fill="#0f172a"/><rect x="710" y="640" width="210" height="110" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.5"/><text x="722" y="662" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">Grafana</text><text x="722" y="678" fill="#cbd5e1" font-size="10.5" text-anchor="start">dashboards for every</text><text x="722" y="694" fill="#cbd5e1" font-size="10.5" text-anchor="start">source above</text><text x="908" y="661" fill="#22d3ee" font-size="10" text-anchor="end">viz</text>
+<text x="40" y="128" fill="#64748b" font-size="10" text-anchor="start" font-weight="400">CLIENTS</text>
+<text x="330" y="128" fill="#64748b" font-size="10" text-anchor="start" font-weight="400">INGRESS</text>
+<text x="650" y="128" fill="#64748b" font-size="10" text-anchor="start" font-weight="400">WORKLOADS</text>
+<text x="990" y="128" fill="#64748b" font-size="10" text-anchor="start" font-weight="400">DATABASE</text>
+<text x="315.0" y="188.0" fill="#cbd5e1" font-size="10" text-anchor="middle" stroke="#020617" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill">HTTPS</text>
+<text x="315.0" y="310.0" fill="#cbd5e1" font-size="10" text-anchor="middle" stroke="#020617" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill">HTTPS</text>
+<text x="635.0" y="192.0" fill="#cbd5e1" font-size="10" text-anchor="middle" stroke="#020617" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill">GET /</text>
+<text x="635.0" y="322.0" fill="#cbd5e1" font-size="10" text-anchor="middle" stroke="#020617" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill">POST /api</text>
+<text x="975.0" y="264.5" fill="#cbd5e1" font-size="10" text-anchor="middle" stroke="#020617" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill">SQL</text>
+<text x="1185.0" y="444.0" fill="#cbd5e1" font-size="10" text-anchor="middle" stroke="#020617" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill">mount</text>
+<circle cx="330" cy="150" r="9" fill="#0f172a" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="330" y="154" fill="#22d3ee" font-size="11" text-anchor="middle">1</text>
+<circle cx="650" cy="150" r="9" fill="#0f172a" stroke="#34d399" stroke-width="1.5"/>
+<text x="650" y="154" fill="#34d399" font-size="11" text-anchor="middle">2</text>
+<circle cx="650" cy="272" r="9" fill="#0f172a" stroke="#34d399" stroke-width="1.5"/>
+<text x="650" y="276" fill="#34d399" font-size="11" text-anchor="middle">3</text>
+<circle cx="990" cy="150" r="9" fill="#0f172a" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="990" y="154" fill="#a78bfa" font-size="11" text-anchor="middle">4</text>
+<circle cx="990" cy="270" r="9" fill="#0f172a" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="990" y="274" fill="#a78bfa" font-size="11" text-anchor="middle">5</text>
+<circle cx="990" cy="410" r="9" fill="#0f172a" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="990" y="414" fill="#a78bfa" font-size="11" text-anchor="middle">6</text>
+<text x="970" y="668" fill="#94a3b8" font-size="10" text-anchor="start" font-weight="400">Grafana is the only place these meet: a</text>
+<text x="970" y="684" fill="#94a3b8" font-size="10" text-anchor="start" font-weight="400">slow /api request and the DHCP lease</text>
+<text x="970" y="700" fill="#94a3b8" font-size="10" text-anchor="start" font-weight="400">that identifies the device share a</text>
+<text x="970" y="716" fill="#94a3b8" font-size="10" text-anchor="start" font-weight="400">timestamp column, not a dashboard.</text>
+<text x="40" y="850" fill="#94a3b8" font-size="10" text-anchor="start" font-weight="400">Order of a POST /api/…: 1 ingress → 2 web (page load only) → 3 api → 4 pg-rw → 5 primary → 6 volume</text>
+<text x="40" y="872" fill="#94a3b8" font-size="10" letter-spacing="1">LEGEND</text>
+<rect x="40" y="879" width="14" height="14" rx="3" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="62" y="891" fill="#cbd5e1" font-size="11">ingress / UI</text>
+<rect x="173.2" y="879" width="14" height="14" rx="3" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+<text x="195.2" y="891" fill="#cbd5e1" font-size="11">service</text>
+<rect x="273.4" y="879" width="14" height="14" rx="3" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="295.4" y="891" fill="#cbd5e1" font-size="11">database</text>
+<rect x="380.2" y="879" width="14" height="14" rx="3" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="402.2" y="891" fill="#cbd5e1" font-size="11">storage</text>
+<rect x="480.4" y="879" width="14" height="14" rx="3" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1.5"/>
+<text x="502.4" y="891" fill="#cbd5e1" font-size="11">blocked</text>
+<rect x="580.5999999999999" y="879" width="14" height="14" rx="3" fill="rgba(30,41,59,0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="602.5999999999999" y="891" fill="#cbd5e1" font-size="11">client</text>
+</svg>
