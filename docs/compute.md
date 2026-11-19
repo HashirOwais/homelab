@@ -11,7 +11,7 @@ cannot hold itself.
 | node-01 | 192.168.69.37 | k3s server, control-plane, embedded etcd | Workloads, Longhorn replica |
 | node-02 | 192.168.69.38 | k3s server, control-plane, embedded etcd | Workloads, Longhorn replica |
 | node-03 | 192.168.69.34 | k3s server, control-plane, embedded etcd | Workloads, Longhorn replica |
-| Optiplex #4 | on HOMELAB | Proxmox VE | Hermes VM, Wazuh VM, Fedora Docker host |
+| Optiplex #4 | on HOMELAB | Proxmox VE | Hermes VM, Wazuh VM |
 | TrueNAS | 192.168.69.23 | NAS | ZFS pool, NFS exports, backup jobs |
 
 ## The cluster nodes

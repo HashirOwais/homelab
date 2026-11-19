@@ -150,17 +150,4 @@ Wazuh is the other half of the picture and runs separately — see
 [security.md](security.md#detection-wazuh). Grafana is for "what is the system
 doing"; Wazuh is for "what changed on this machine".
 
-## Additional services
 
-Optional, and nothing above depends on them. They run on the Fedora Docker host
-on the Proxmox machine, outside both Kubernetes and the cluster's release
-process:
-
-| Service | Port | What it does |
-|---|---|---|
-| n8n | 5678 (host network) | Workflow automation |
-| Nginx Proxy Manager | 80, 443, 81 | Reverse proxy with a web UI |
-| Termix | 8080 | Web terminal over Guacamole |
-
-They are listed here for completeness. Their compose files are not part of the
-Kubernetes manifests, and if they disappear nothing in `apps/` notices.
